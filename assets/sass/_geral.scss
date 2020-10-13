@@ -1,0 +1,101 @@
+.flexMode{
+  display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+}
+.box-sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*{
+  @extend .box-sizing;
+}
+.container-fluid{
+  padding: 0px;
+}
+img{
+  max-width: 100%;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'azo-sans-web', sans-serif;
+}
+
+.fill { 
+  min-height: 100%;
+  height: 100%;
+}
+
+.bg-cover{
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.btnPadrao{
+  display: table;
+  a{
+    display: table;
+    width: auto;
+    padding: 10px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $cor1;
+    border: 2px solid $cor1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+  &:hover{
+    a{
+      background: $cor1;
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .fill { 
+    min-height: auto;
+    height: auto;
+  }
+  .btnPadrao{
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    a{
+      display: table;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 1200px) {
+}
